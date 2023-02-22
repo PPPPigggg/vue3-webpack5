@@ -1,12 +1,17 @@
-# unpacked plugin folders
-plugins/**/*
+.DS_Store
+node_modules/
+/dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+/test/unit/coverage/
+/test/e2e/reports/
+selenium-debug.log
 
-# files directory where uploads go
-files
-
-# DBMigrate plugin: generated SQL
-db/sql
-
-# AssetBundler plugin: generated bundles
-javascripts/bundles
-stylesheets/bundles
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
