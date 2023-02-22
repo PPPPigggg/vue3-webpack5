@@ -1,0 +1,32 @@
+{
+  "devDependencies": {
+    "html-webpack-plugin": "^5.5.0",
+    "ts-loader": "^9.4.2",
+    "typescript": "^4.9.5",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  },
+  "name": "vue3-webpack5-",
+  "description": "个人学习使用，使用vue3+webpack5搭建开发环境",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "eslint-scope": "^5.1.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "webpack",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PPPPigggg/vue3-webpack5-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PPPPigggg/vue3-webpack5-/issues"
+  },
+  "homepage": "https://github.com/PPPPigggg/vue3-webpack5-#readme"
+}
