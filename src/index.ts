@@ -1,9 +1,4 @@
-const myName: string = 'xxx'
-console.log(myName)
+import { createApp } from "vue";
+import App from "./App.vue";
 
-;[1, 2, 3].forEach((item) => {
-  console.log(item)
-})
-
-const isInclude = ['a', 'b', 'c'].includes('a')
-console.log(isInclude)
+createApp(App).mount("#app");
