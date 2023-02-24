@@ -8,6 +8,7 @@ specifiers:
   '@typescript-eslint/eslint-plugin': ^5.53.0
   '@typescript-eslint/parser': ^5.53.0
   '@vue/compiler-sfc': ^3.2.47
+  '@vue/tsconfig': ^0.1.3
   babel-loader: ^9.1.2
   copy-webpack-plugin: ^11.0.0
   cross-env: ^7.0.3
@@ -55,6 +56,7 @@ devDependencies:
   '@typescript-eslint/eslint-plugin': 5.53.0_ny4s7qc6yg74faf3d6xty2ofzy
   '@typescript-eslint/parser': 5.53.0_7kw3g6rralp5ps6mg3uyzz6azm
   '@vue/compiler-sfc': 3.2.47
+  '@vue/tsconfig': 0.1.3_@types+node@18.14.0
   babel-loader: 9.1.2_qoaxtqicpzj5p3ubthw53xafqm
   copy-webpack-plugin: 11.0.0_webpack@5.75.0
   cross-env: 7.0.3
@@ -2095,6 +2097,17 @@ packages:
 
   /@vue/shared/3.2.47:
     resolution: {integrity: sha512-BHGyyGN3Q97EZx0taMQ+OLNuZcW3d37ZEVmEAyeoA9ERdGvm9Irc/0Fua8SNyOtV1w6BS4q25wbMzJujO9HIfQ==}
+    dev: true
+
+  /@vue/tsconfig/0.1.3_@types+node@18.14.0:
+    resolution: {integrity: sha512-kQVsh8yyWPvHpb8gIc9l/HIDiiVUy1amynLNpCy8p+FoCiZXCo6fQos5/097MmnNZc9AtseDsCrfkhqCrJ8Olg==}
+    peerDependencies:
+      '@types/node': '*'
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
+    dependencies:
+      '@types/node': 18.14.0
     dev: true
 
   /@webassemblyjs/ast/1.11.1:
