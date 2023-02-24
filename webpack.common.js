@@ -115,9 +115,9 @@ module.exports = {
   ],
   // 简化控制台信息
   stats: "errors-only",
-  resolve: {
-    alias: {
-      "@": path.resolve(__dirname, "../src"),
-    },
-  },
+  // resolve: {
+  //   alias: {
+  //     "@": path.resolve(__dirname, "../src"),
+  //   },
+  // },
 };
