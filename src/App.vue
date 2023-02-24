@@ -9,7 +9,7 @@
 import { ref } from "vue";
 const text = ref<string>("hello");
 
-console.log("%c Line:13 🥛", "color:#f5ce50", process.env);
+console.log("%c Line:13 🥛", "color:#f5ce50", process.env.NODE_ENV);
 // window.console.log("%c Line:13 🥛", "color:#f5ce50", process.env);
 </script>
 

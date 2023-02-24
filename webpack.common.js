@@ -2,11 +2,12 @@ const path = require("path");
 
 const { VueLoaderPlugin } = require("vue-loader");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const { DefinePlugin } = require("webpack");
+const { DefinePlugin, EnvironmentPlugin } = require("webpack");
 // 此插件会将 CSS 提取到单独的文件中，为每个包含 CSS 的 JS 文件创建一个 CSS 文件，并且支持 CSS 和 SourceMaps 的按需加载。
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
-const getClientEnvironment = require("./env");
+// const getClientEnvironment = require("./env");
+const getClientEnv = require("./env");
 
 const devMode = process.env.NODE_ENV !== "production";
 
@@ -99,12 +100,17 @@ module.exports = {
 
     new VueLoaderPlugin(),
 
-    /* 解决vue在控制台的警告 */
+    /**
+     * 把环境变量注入浏览器
+     * 使用时需要把名字写全如“process.env.MY_VUE_ENV_TEST”
+     */
+    new EnvironmentPlugin([...getClientEnv()]),
     new DefinePlugin({
+      /* 解决vue在控制台的警告 */
       __VUE_OPTIONS_API__: true,
       __VUE_PROD_DEVTOOLS__: false,
       /* 把环境变量注入浏览器 */
-      ...getClientEnvironment(),
+      // ...getClientEnvironment(),
     }),
   ],
   // 简化控制台信息
