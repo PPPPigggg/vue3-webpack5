@@ -7,6 +7,6 @@ module.exports = {
         allExtensions: true, // 支持所有文件扩展名
       },
     ],
-    ["@babel/plugin-transform-runtime", { corejs: "3" }],
   ],
+  plugins: [["@babel/plugin-transform-runtime", { corejs: "3" }]],
 };
