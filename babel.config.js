@@ -1,11 +1,12 @@
 module.exports = {
   presets: [
-    '@babel/preset-env',
+    "@babel/preset-env",
     [
-      '@babel/preset-typescript',
+      "@babel/preset-typescript",
       {
-        allExtensions: true // 支持所有文件扩展名
-      }
-    ]
-  ]
-}
+        allExtensions: true, // 支持所有文件扩展名
+      },
+    ],
+    ["@babel/plugin-transform-runtime", { corejs: "3" }],
+  ],
+};
